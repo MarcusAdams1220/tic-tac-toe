@@ -3,3 +3,5 @@
 ## Plan / Approach I Took To Solve The Problem
 ## Code I'm Proud Of
 ## Lessons I Learnt
+
+<a href="https://marcusadams1220.github.io/tic-tac-toe/">Click Here To Play The Game</a>
