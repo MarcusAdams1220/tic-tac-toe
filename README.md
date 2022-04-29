@@ -1,6 +1,9 @@
 # Tic Tac Toe
 ## Summary Of Project
 ## Plan / Approach I Took To Solve The Problem
+  ### HTML Wireframe
+  <img src="./Images/Tic-Tac-Toe Wireframe.png" alt="">
+  <img src="./Images/Tic-Tac-Toe Flowchart.png" alt="">
 ## Code I'm Proud Of
 ## Lessons I Learnt
 
