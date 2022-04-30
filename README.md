@@ -2,7 +2,7 @@
 ## Summary Of Project
 ## Plan / Approach I Took To Solve The Problem
 ### HTML Wireframe
-  <img src="./Images/Tic-Tac-Toe Wireframe.png" alt="">
+  <img src="./Images/Tic-Tac-Toe Wireframe-v2.png" alt="">
 ### Flowchart
   <img src="./Images/Tic-Tac-Toe Flowchart.png" alt="">
 ## Code I'm Proud Of
