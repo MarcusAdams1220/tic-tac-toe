@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Basketball Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css">
     <script src="./main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,16 @@
 </head>
 <body>
     <header>
-        <h1 id="game-title">Tic Tac Toe</h1>
+        <h1 class="game-title">Basketball Tic Tac Toe</h1>
     </header>
     <main>
         <section class="player-one-area">
-            <h1 id="player-two">Player One <br>(X's)</h1>
+            <h1 id="player-name">Player One (X)</h1>
             <p class="wins">Games Won: <span id="p1-win-counter"></span></p>
         </section>
         <section class="game-area">
-            <h2 class="game-info">It's Player One's Turn</h2>
+            <h2 class="game-info" id="hidden">Start A New Game</h2>
+            <h2 class="timer" id="hidden">Shot Clock: 5 Seconds</h2>
             <div class="game-board">
                 <div class="game-square"  id="square-1"></div>
                 <div class="game-square"  id="square-2"></div>
@@ -36,14 +37,31 @@
                 <div class="game-square"  id="square-8"></div>
                 <div class="game-square"  id="square-9"></div>
             </div>
-            <div class="rematch">
-                <button class="rematch-btn">Rematch</button>
+            <div class="new-game">
+                <button class="new-game-btn">New Game</button>
             </div>
         </section>
         <section class="player-two-area">
-            <h1 id="player-two">Player Two <br> (O's)</h1>
+            <h1 id="player-name">Player Two (O)</h1>
             <p class="wins">Games Won: <span id="p2-win-counter"></span></p>
         </section>
     </main>
+    <article> 
+        <h2>How The Game Works:</h2>
+        <div>
+            <ul>
+                <li>This version of Tic Tac Toe includes a basketball shot clock.</li>
+                <li><span class="orange-txt">If the shot clock expires, the game is over - So think quickly!</span></li>
+                <li>You'll have 5 seconds to place your marker before the clock expires.</li>
+                <li>Once your marker is placed, the clock will reset for the next player.</li>
+            </ul>
+        </div>
+    </article>
+    <!-- <div class="creator" >
+        <div class="profile-pic">
+            <img src="../Images/marcus.jpg" alt="Marcus Adams" id="profile-pic">
+            <h2 class="creator-txt">Made by Marcus Adams</h2>
+        </div>
+    </div> -->
 </body>
 </html>

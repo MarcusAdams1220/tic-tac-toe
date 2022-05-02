@@ -1,54 +1,41 @@
-# Tic Tac Toe
-## Summary Of Project
-## Plan / Approach I Took To Solve The Problem
+# Basketball Tic Tac Toe
+# Summary Of Project
 
-### HTML Wireframe
-  <img src="./Images/Tic-Tac-Toe Wireframe-v2.png" alt="">
-### Flowchart
-  <img src="./Images/Tic-Tac-Toe Flowchart.png" alt="">
+I added a basketball twist to the classic game of Tic Tac Toe. 
 
-### JS Plan
-// Function to change turns
-    // Store the current turn in a globally scoped variable
-    // If statement to check who's turn it is
-    // Display who's turn into it is currently
-    // Change the stored turn
+In basketball, there's a 24 second shot-clock & once you receive the ball you have to shoot before the clock expires. 
 
+So in this version of Tic Tac Toe, I added a 5 second shot-clock to speed up the pace of the game.
 
-// Make all squares clickable
-    // Create DOM objects for each square
-    // 'Click' event listeners for each square
+I also inlcuded a win counter so each player can track how many times they've won over mutliple games.
 
-// Function that allows players to place markers
-    // If statement to check who's turn it is
-    // Fill square with the right marker based on turn
-    // Remove event listener from the clicked square
-    // Check for a winner after each square => create a function for this
+# Approach I Took To Solve The Problem
 
-// Function to check for a winner
-    // If statements for each win possibilty
-    // If player one wins, invoke a 'player one wins' function
-    // If player two wins, invoke a 'player two wins' function
-    // If there is no winner, invoke the change turns function
+## HTML Wireframe
+  <img src="./Images/tic-tac-toe-wireframe.png" alt="">
 
-// Create a player x wins function
-    // Store the winners name in a variable
-    // Display the name of the winner
-    // Disable all squares from being clicked => Can be reversed with a rematch button
+## Flowchart
+  <img src="./Images/tic-tac-toe-flow.png" alt="">
+
+# Code I'm Proud Of
+The code below creates an array of the game squares & adds 2 'click' event listeners to each square by looping through the array:
+
+`var allSquares = Array.from(document.querySelectorAll('.game-square'))`
+
+`for (var i = 0; i < allSquares.length; i++) {`
+
+`allSquares[i].addEventListener('click', handleClick)`
+
+`allSquares[i].addEventListener('click', resetTimer)`
+
+`}`
 
 
-// Function to prevent all squares from being clicked after a win
-    // Loop though each square & remove the 'click' event listener
 
+# Lessons I Learnt
+While learning how to write the code above, I also discovered a more efficient way to achieve the same outcome using the forEach method.
 
-// Make a function for the rematch button to reset the game
-    // Add an 'click' event listener to the rematch button
-    // Make is player one's turn
-    // Set the winner's name to ""
-    // Remove the content from each square
-    // Add 'click event listeners to every square to make them clickable
+`allSquares.forEach(square => square.addEventListener('click', resetTimer))`
 
-## Code I'm Proud Of
-## Lessons I Learnt
 
 <a href="https://marcusadams1220.github.io/tic-tac-toe/">Click Here To Play The Game</a>
