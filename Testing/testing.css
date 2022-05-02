@@ -22,8 +22,17 @@ main {
     text-align: center;
 }
 
+section h1 {
+    font-size: 50px;
+}
+
 .player-one-area, .player-two-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(231, 231, 231, 0.863);
+    background-size: cover;
     border-radius: 50px;
     margin: 100px;
 
@@ -35,21 +44,19 @@ input {
     padding: 10px 40px 10px 40px;
 }
 
-.player-one, .player-two, .wins {
+#player-one, #player-two, .wins {
     font-size: 30px;
     padding: 20px;
     border-radius: 10px;
     margin: 0;
 }
 
-p {
-    font-size: 25px;
+.wins {
+    color: rgb(216, 95, 2);
 }
 
-.game-info {
-    text-align: center;
-    color: white;
-    font-size: 35px;
+p {
+    font-size: 25px;
 }
 
 h3 {
@@ -59,6 +66,21 @@ h3 {
 .game-area {
     align-items: center;
     margin: 0 auto;
+}
+
+.game-info {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.timer {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
 }
 
 .game-board {
@@ -77,15 +99,14 @@ h3 {
     background-color: white;
 }
 
-.buttons {
+.rematch {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .rematch-btn, .start-btn {
-    padding: 10px 30px 10px 30px;
+    padding: 10px 50px 10px 50px;
     font-size: 25px;
     background-image: url("../Images/basketball-texture.jpg") ;
     background-size: cover;
@@ -99,12 +120,4 @@ h3 {
 .rematch-btn:active, .start-btn:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
-
-#hidden {
-    color: transparent;
-    background-image: none;
-    background-color: transparent;
-    box-shadow: none;
-    border-color: transparent;
 }

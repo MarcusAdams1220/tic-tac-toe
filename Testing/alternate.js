@@ -124,7 +124,7 @@ function disableAllSquares() {
 
 
 // Rematch button to restart game
-var rematchBtn = document.querySelector('#rematch-btn')
+var rematchBtn = document.querySelector('.rematch-btn')
 
 rematchBtn.addEventListener('click', resetGame)
 
@@ -154,25 +154,25 @@ function winCounter() {
 }
 
 // Shot Clock
-var count = 25
+var count = 6
 var counter = setInterval(countdown, 1000)
 
 function countdown() {
     count -= 1
     if (count <= 0) {
         disableAllSquares()
-        document.querySelector('.game-info').textContent = "Game Over! Time Ran Out."
-        document.querySelector('#timer').textContent = "Shot Clock: 0 seconds"
+        document.querySelector('.game-info').textContent = "Game Over, The Shot Clock Expired!"
+        document.querySelector('.timer').textContent = "Shot Clock: 0 seconds"
         allSquares.forEach(square => square.removeEventListener('click', resetTimer))
     } else {
-        document.querySelector('#timer').textContent = "Shot Clock: " + count + " seconds"
+        document.querySelector('.timer').textContent = "Shot Clock: " + count + " seconds"
     }
 }
 
 // Reset shot clock on click
 function resetTimer(event) {
     clearInterval(counter)
-    count = 25
+    count = 6
     counter = setInterval(countdown, 1000)
 }
 allSquares.forEach(square => square.addEventListener('click', resetTimer))

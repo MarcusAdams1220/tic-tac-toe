@@ -9,8 +9,12 @@ document.querySelector('.start-btn').addEventListener('click', setName)
 function setName() {
     p1name = document.querySelector('#player-one-input').value
     p2name = document.querySelector('#player-two-input').value
+    document.querySelector('.p1-name-label').setAttribute("id", "hidden")
+    document.querySelector('.p2-name-label').setAttribute("id", "hidden")
     document.querySelector('#player-one-input').setAttribute("id", "hidden")
     document.querySelector('#player-two-input').setAttribute("id", "hidden")
+    document.querySelector('.start-btn').setAttribute("id", "hidden")
+    document.querySelector('.rematch-btn').removeAttribute("id", "hidden")
     // document.querySelector('#player-two-input').removeAttribute()
     // document.querySelector('#player-two-input').removeAttribute()
     // document.querySelector('#player-two-input').removeAttribute()
@@ -24,10 +28,10 @@ var turn = 1
 
 function changeTurn() {
     if (turn === 1) {
-        document.querySelector('.game-info').textContent = "It's Player Two's Turn"
+        document.querySelector('.game-info').textContent = "It's " + p1name + "'s turn"
         turn = "p2"
     } else {
-        document.querySelector('.game-info').textContent = "It's Player One's Turn"
+        document.querySelector('.game-info').textContent = "It's " + p2name + "'s turn"
         turn = 1
     }
 }

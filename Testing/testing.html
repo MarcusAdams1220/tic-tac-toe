@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
     <link rel="stylesheet" href="testing.css">
-    <script src="./testing.js" defer></script>
+    <script src="./alternate.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
@@ -16,16 +16,16 @@
 </head>
 <body>
     <header>
-        <h1>Basketball Tic Tac Toe</h1>
+        <h1 id="game-title">Tic Tac Toe</h1>
     </header>
     <main>
         <section class="player-one-area">
-            <h1 class="player-two">Player One <br>(X's)</h1>
-            <input type="text" placeholder="Enter Your Name" id="player-one-input">
-            <p class="wins" id="hidden">Games Won: <span id="p1-win-counter"></span></p>
+            <h1 id="player-two">Player One <br>(X's)</h1>
+            <p class="wins">Games Won: <span id="p1-win-counter"></span></p>
         </section>
         <section class="game-area">
-            <h2 class="game-info">Enter Your Name's To Start Playing</h2>
+            <h2 class="game-info">It's Player One's Turn</h2>
+            <h2 class="timer"></h2>
             <div class="game-board">
                 <div class="game-square"  id="square-1"></div>
                 <div class="game-square"  id="square-2"></div>
@@ -37,15 +37,13 @@
                 <div class="game-square"  id="square-8"></div>
                 <div class="game-square"  id="square-9"></div>
             </div>
-            <div class="buttons">
-                <button class="start-btn">Start Game</button>
-                <button class="rematch-btn" id="hidden">Rematch</button>
+            <div class="rematch">
+                <button class="rematch-btn">Rematch</button>
             </div>
         </section>
         <section class="player-two-area">
-            <h1 class="player-two">Player Two <br> (O's)</h1>
-            <input type="text" placeholder="Enter Your Name" id="player-two-input">
-            <p class="wins" id="hidden">Games Won: <span id="p2-win-counter"></span></p>
+            <h1 id="player-two">Player Two <br> (O's)</h1>
+            <p class="wins">Games Won: <span id="p2-win-counter"></span></p>
         </section>
     </main>
 </body>

@@ -22,6 +22,10 @@ main {
     text-align: center;
 }
 
+section h1 {
+    font-size: 50px;
+}
+
 .player-one-area, .player-two-area {
     display: flex;
     flex-direction: column;
@@ -45,6 +49,10 @@ input {
     padding: 20px;
     border-radius: 10px;
     margin: 0;
+}
+
+.wins {
+    color: rgb(216, 95, 2);
 }
 
 p {
