@@ -1,3 +1,24 @@
+// Custom names
+var p1Input = document.querySelector('#player-one-input')
+var p2Input = document.querySelector('#player-two-input')
+var p1name
+var p1name
+
+document.querySelector('.start-btn').addEventListener('click', setName)
+
+function setName() {
+    p1name = document.querySelector('#player-one-input').value
+    p2name = document.querySelector('#player-two-input').value
+    document.querySelector('#player-one-input').setAttribute("id", "hidden")
+    document.querySelector('#player-two-input').setAttribute("id", "hidden")
+    // document.querySelector('#player-two-input').removeAttribute()
+    // document.querySelector('#player-two-input').removeAttribute()
+    // document.querySelector('#player-two-input').removeAttribute()
+}
+
+
+// <------- Core Game ------>
+
 // Function to change turns
 var turn = 1
 
@@ -24,7 +45,10 @@ var s9 = document.querySelector('#square-9')
 
 // 'Click' event listeners for each square 
 var allSquares = Array.from(document.querySelectorAll('.game-square'))
-allSquares.forEach(square => square.addEventListener('click', placeMarker))
+
+function startGame() {
+    allSquares.forEach(square => square.addEventListener('click', placeMarker))
+}
 
 // Function to place marker on clicked square & check results
 function placeMarker(e) {
