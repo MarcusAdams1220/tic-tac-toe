@@ -1,4 +1,5 @@
 # Basketball Tic Tac Toe
+<a href="https://marcusadams1220.github.io/tic-tac-toe/">Click Here To Play The Game</a>
 # Summary Of Project
 
 I added a basketball twist to the classic game of Tic Tac Toe. 
@@ -36,6 +37,3 @@ The code below creates an array of the game squares & adds 2 'click' event liste
 While learning how to write the code above, I also discovered a more efficient way to achieve the same outcome using the forEach method.
 
 `allSquares.forEach(square => square.addEventListener('click', resetTimer))`
-
-
-<a href="https://marcusadams1220.github.io/tic-tac-toe/">Click Here To Play The Game</a>
